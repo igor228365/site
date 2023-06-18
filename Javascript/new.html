@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*let n = 15.3626;
+alert( n.toFixed(1) ); // "15.4"
+alert( n.toFixed(2) ); // "15.36"
+alert( n.toFixed(3) ); // "15.363"
+alert( n.toFixed(5) ); // "15.36260"
+let x = prompt("Введіть будь-яке значення:");
+if (isNaN(x)) {
+    alert("Це Nan!" );
+} else {
+    alert("Ви ввели число" );
+}
+let number;
+do {
+  number = prompt("Введите число:");
+} while (isNaN(number));
+
+document.write("Вы ввели число: " + number);
+let num1 = +prompt("Введіть перше число в межах від 0 до 1: ",0.1);
+let num2 = +prompt("Введіть друге число в межах від 0 до 1: ",0.2);
+
+if (isNaN(num1) || isNaN(num2) || num1 < 0 || num1 > 1 || num2 < 0 || num2 > 1) {
+    document.write("Некоректні дані.");
+} else {
+  let sum = (num1 + num2).toFixed(2);
+ document.write("Результат додавання: " + sum);
+}*/
+let min = +prompt("Введіть максимальне число :", 0)
+let max = +prompt("Введіть максимальне число :", 100)
+let number;
+for(i=0;i<1000;i++){
+    number=min+Math.random()*max
+document.writeln(number+"<br>")
+}
+
+
+</script>
+</body>
+</html>

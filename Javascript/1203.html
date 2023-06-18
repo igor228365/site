@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+            background-image: url("https://th.bing.com/th/id/R.651ca5bc9644e57990c634ab9ab03c13?rik=Qp0gWRGRfCmbVg&riu=http%3a%2f%2fphonoteka.org%2fuploads%2fposts%2f2021-07%2f1625507081_16-phonoteka-org-p-urok-matematiki-zastavka-krasivie-zastavki-16.jpg&ehk=zeizrNaAgeUDL0JWw2GEXbxNNvnnpD5zwZnedzgcDgw%3d&risl=&pid=ImgRaw&r=0");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        h1 {
+            color: rgb(49, 199, 19);
+        }
+        
+        p {
+            color: rgb(25, 199, 202);
+        }
+        
+        .result {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+  <h1>Множення чисел</h1>
+  <p>Введіть мінімальне та максимальне число, щоб вивести парні числа у заданому діапазоні:</p>
+    <script>
+/*        for (let i = 1; i <= 9; i++) {
+  for (let j = 1; j <= 9; j++) {
+    document.write(`${i} x ${j} = ${i*j}`+'<br>');
+  }
+}*/
+let min = prompt("Введіть мінімальне число:");
+let max = prompt("Введіть максимальне число:");
+
+while (isNaN(min)) {
+  min = prompt("Мінімальне число повинне бути числом. Введіть мінімальне число:");
+}
+
+while (isNaN(max)) {
+  max = prompt("Максимальне число повинне бути числом. Введіть максимальне число:");
+}
+
+min = Number(min);
+max = Number(max);
+
+let start = min < max ? min : max;
+
+let end = min > max ? min : max;
+
+for (let n = start; n <= end; n += 2) {
+  document.write(n);
+}
+    </script>
+</body>
+</html>

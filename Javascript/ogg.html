@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function square_equation() {/*
+        let a = document.square.a.value;
+        let b = document.square.b.value;
+        let c = document.square.c.value;
+        let sol = document.getElementById("square_sol");
+      
+          let D, x1, x2; // змінні
+          D = b**2 - 4*a*c; // загальна формула дискрімінанту
+          x1 = ( -b + Math.sqrt(D) ) / (2*a); // перший корінь квадратного рівняння
+          x2 = ( -b - Math.sqrt(D) ) / (2*a); // другий корінь квадратного рівняння
+          if ( D > 0 ) {
+              
+              string="x1 = " + x1 + " x2 = " + x2 // вивід значення
+      
+        }
+          else if ( D == 0 ) {
+              string= "x = " + x1 ; // вивід значення
+          } // else if D == 0
+          else {
+              string= "квадратне рівняння коренів не має!" ;
+          } // else (D < 0)*/
+      
+          function square_equation() {
+  let a = document.square.a.value;
+  let b = document.square.b.value;
+  let c = document.square.c.value;
+  let sol = document.getElementById("square_sol");
+
+	let D, x1, x2; // змінні
+	D = b**2 - 4*a*c; // загальна формула дискрімінанту
+	x1 = ( -b + Math.sqrt(D) ) / (2*a); // перший корінь квадратного рівняння
+	x2 = ( -b - Math.sqrt(D) ) / (2*a); // другий корінь квадратного рівняння
+	if ( D > 0 ) {
+		
+		string="x1 = " + x1 + " x2 = " + x2 // вивід значення
+
+  }
+	else if ( D == 0 ) {
+		string= "x = " + x1 ; // вивід значення
+	} // else if D == 0
+	else {
+		string= "квадратне рівняння коренів не має!" ;
+	} // else (D < 0)
+
+
+  sol.innerHTML = string;
+}
+        sol.innerHTML = string;
+      }
+      </script>
+      let a = +prompt("Введіть a");
+      let b = +prompt("Введіть b");
+      let c = +prompt("Введіть c");
+      if(a<=0 || b<=0 || c<=0 || (a+b)<=c || (a+c)<=b || (b+c)<=a){
+          alert("Такого трикутника не існує!")
+      } else{
+         let P=a+b+c
+      document.write("Периметр трикутника зі сторонами a= "+a+" b= "+b+" c= "+c +" дорівнює "+P+"<br>");
+      let p=P/2
+      let S=Math.sqrt(p*(p-a)*(p-b)*(p-c))
+      document.write("Площа трикутника зі сторонами a= "+a+" b= "+b+" c= "+c +" дорівнює "+S); 
+      }
+  </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body>
+<canvas id="myCanvas" width="800" height="800"
+style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+<script>
+/*let a = document.getElementById("myCanvas");
+let cxt = a.getContext("2d");
+cxt.fillStyle ="red";
+cxt.fillRect(10, 10, 75, 75); 
+cxt.fillStyle ="green";
+cxt.fillRect(20, 20, 75, 75);
+cxt.fillStyle ="blue";
+cxt.fillRect(30, 30, 75, 75);
+let canvas = document.getElementById("myCanvas"), 
+cxt = canvas.getContext("2d");
+cxt.strokeStyle = "red";
+cxt.fillStyle = "blue";
+cxt.lineWidth = 6;
+cxt.strokeRect(50, 40, 100, 100);
+cxt.fillRect(50, 40, 100, 100);
+<canvas id="myCanvas" width="500" height="200"></canvas>
+            let canvas = document.getElementById("myCanvas"), 
+               cxt = canvas.getContext("2d");
+            cxt.strokeStyle = "red";
+            cxt.setLineDash([15,5]);
+            cxt.strokeRect(40, 40, 100, 100);
+            cxt.strokeStyle = "blue";
+            cxt.setLineDash([2,5,6]);
+            cxt.strokeRect(180, 40, 100, 100);
+            cxt.strokeStyle = "green";
+            cxt.setLineDash([2,2]);
+            cxt.strokeRect(320, 40, 100, 100);
+            let canvas = document.getElementById("myCanvas"), */
+            let canvas = document.getElementById("myCanvas");
+
+            let cxt = canvas.getContext("2d");
+                  
+cxt.fillStyle = "blue";
+cxt.fillRect(50, 50, 100, 100);
+             
+cxt.globalAlpha = 0.5;
+cxt.fillStyle = "red";
+ cxt.fillRect(100, 100, 100, 100);
+</script>
+</body>
+</html>

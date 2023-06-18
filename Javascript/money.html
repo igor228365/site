@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <script type="text/javascript">
+        let money = +prompt('Яку суму хочете зняти (Мінімальна банкнота 50 грн.)','');
+        if (money < 50 || money > 10000) {
+            document.write('На жаль, Ви можете зняти гроші на суму від 50 грн. до 10000 грн.');
+        }
+        else if (money % 50==0){
+            document.write('Заберіть свої гроші в суммі '+money+' грн.');
+        } else {
+            document.write('У нас немає купюр меньше 50 тому решту залишу собі)');
+        }
+    </script>   
+</body>
+</html>
+</html>
