@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Operations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("https://detkamonline.ru/wp-content/uploads/kartinki-matematicheskie-dlya-detej_44.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+        }
+    h1 {
+        color: #333;
+        font-size: 24px;
+        margin-top: 40px;
+    }
+
+    .result {
+        color: #333;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    button {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        opacity: 0.8;
+    }
+</style>
+</head>
+<body>
+    <h1>Math Operations</h1>
+    <script>
+        let x = prompt("Введіть значення x:");
+        let n = prompt("Введіть значення n (більше або дорівнює 1):");
+    function pow(x, n) {
+        let result = 1;
+        for (let i = 0; i < n; i++) {
+            result *= x;
+        }
+        return result;
+    }
+
+    if (n >= 1) {
+        let result = pow(x, n);
+        document.write(`<p class="result">${x} в ступені ${n} = ${result}</p>`);
+    } else {
+        document.write("<p class='result'>Помилка: n повинно бути більше або дорівнює 1</p>");
+    }
+
+    let f = prompt("Введіть число для розрахунку факторіалу:");
+
+    function factorial(f) {
+        if (f < 0) {
+            return "Введіть число більше або дорівнює 0";
+        } else if (f === 0) {
+            return 1;
+        } else {
+            return f * factorial(f - 1);
+        }
+    }
+
+    let result = factorial(f);
+    document.write(`<p class="result">Факторіал числа ${f} = ${result}</p>`);
+</script>
+<button onclick="location.reload()">Спробувати ще раз</button>
+</body>
+</html>
